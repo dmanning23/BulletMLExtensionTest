@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!DOCTYPE bulletml SYSTEM "bulletml.dtd">
+
+<bulletml>
+	<action label="top">
+		<repeat>
+			<times>$clip</times>
+			<action>
+				<fire>
+					<speed>$sped</speed>
+					<bullet>
+						<action>
+							<wait>$life</wait>
+							<vanish/>
+						</action>
+					</bullet>
+				</fire>
+				<wait>$rpet</wait>
+			</action>
+		</repeat>
+	</action>
+</bulletml>
